@@ -1,5 +1,9 @@
 export const Neutral = props => {
     return(
-        <div></div>
+        <div>
+            <button onClick={props.triggerSelfReport}>
+                <img src="../assets/neutral-icon.png"></img>
+            </button>
+        </div>
     );
 }

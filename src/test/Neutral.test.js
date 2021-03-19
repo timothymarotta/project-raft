@@ -3,13 +3,16 @@ import userEvent from '@testing-library/user-event';
 
 import {Neutral} from "../main/Neutral"
 
+const testOnClick = () => {
+    console.log("button was clicked.");
+}
+
 describe('Neutral State', () => {
     test('check button', () => {
         
-        render(<Neutral/>);
+        render(<Neutral triggerSelfReport={testOnClick}/>);
         screen.debug();
         expect(screen.getByRole("button")).toBeEnabled();
-        expect(screen.getAllByRole("button").length).toBe(1);
 
         userEvent.click(screen.getByRole("button"));
         expect(screen.getByRole("button").onclick).toBeCalled();
