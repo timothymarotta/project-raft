@@ -3,19 +3,16 @@ import userEvent from '@testing-library/user-event';
 
 import {Neutral} from "../main/Neutral"
 
-const testOnClick = () => {
-    console.log("button was clicked.");
-}
-
 describe('Neutral State', () => {
     test('check button', () => {
+        const mockTriggerSelfReport = jest.fn();
         
-        render(<Neutral triggerSelfReport={testOnClick}/>);
+        render(<Neutral triggerSelfReport={mockTriggerSelfReport}/>);
         screen.debug();
         expect(screen.getByRole("button")).toBeEnabled();
 
         userEvent.click(screen.getByRole("button"));
-        expect(screen.getByRole("button").onclick).toBeCalled();
+        expect(mockTriggerSelfReport).toBeCalledTimes(1);
         expect(screen.getByRole("button")).toBeEnabled();
 
     });
