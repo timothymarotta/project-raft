@@ -1,10 +1,10 @@
 
 import './App.css';
-import { Confirmation } from './main/Confirmation';
+import { NeutralDemo } from './test/Neutral.demo';
 
 function App() {
   return (
-    <Confirmation></Confirmation>
+    <NeutralDemo></NeutralDemo>
   );
 }
 
