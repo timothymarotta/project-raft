@@ -1,3 +1,6 @@
+import feedback from "../assets/neutral-icon.png";
+import '../App.css';
+
 export const Neutral = props => {
 
     const buttonClicked = (e) => {
@@ -6,8 +9,8 @@ export const Neutral = props => {
 
     return(
         <div>
-            <button onClick={buttonClicked}>
-                <img src="../assets/neutral-icon.png"></img>
+            <button className={"neutralButton"} onClick={buttonClicked}>
+                <img src={feedback} alt={"Report Your Emotion"}></img>
             </button>
         </div>
     );
