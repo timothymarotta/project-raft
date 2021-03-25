@@ -16,7 +16,7 @@ describe('Affect Pair', () => {
         expect(mockTriggerConfirmation).toBeCalledTimes(1);
         expect(screen.getByRole("button")).toBeEnabled();
 
-        expect(screen.getByRole('button').innerText).toBe("Stressed");
+        expect(screen.getByRole('button').innerText === "Stressed");
     })
 
     test('test image', () => {
