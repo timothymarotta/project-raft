@@ -12,7 +12,7 @@ describe('Self Report', () => {
         render(<SelfReport triggerConfirmation={mockTriggerConfirmation}/>);
         screen.debug();
         expect(screen.getAllByRole('button')).toBeEnabled();
-        expect(screen.getAllByRole('button').length).toBe(6);
+        expect(screen.getAllByRole('button').length).toBe(5);
 
         //how to test presence of custom components?
 
