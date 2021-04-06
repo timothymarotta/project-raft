@@ -1,15 +1,19 @@
+import '../App.css';
+
 export const AffectPair = props => {
 
     const buttonClicked = (e) => {
-        props.triggerConfirmation(props.emotion);
+        props.reportEmotion(props.emotion);
     }
 
     return (
-        <div>
-            <p>I'm feeling {props.emotion}</p>
-            <button onClick={buttonClicked}>
-                <img src={props.image} alt={props.emotion}/>
+        <div className={"affectContainer"}>
+            
+            
+            <button className={"affectButton"} onClick={buttonClicked}>
+                <img className={"affectButtonImage"} src={props.image} alt={props.emotion}/>
             </button>
+            <p className={"affectText"}>I'm feeling {props.emotion}</p>
         </div>
     )
 }

@@ -1,10 +1,12 @@
 
 import './App.css';
-import { NeutralDemo } from './test/Neutral.demo';
+import { SelfReportDemo } from './test/SelfReport.demo';
+// import { Confirmation } from './main/Confirmation';
 
 function App() {
   return (
-    <NeutralDemo></NeutralDemo>
+    <SelfReportDemo></SelfReportDemo>
+    // <Confirmation></Confirmation>
   );
 }
 

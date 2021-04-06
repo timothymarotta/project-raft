@@ -1,4 +1,5 @@
 import {AffectPair} from '../main/AffectPair';
+import '../App.css';
 
 import angry from '../assets/angry.png';
 import bored from '../assets/bored.png';
@@ -16,13 +17,13 @@ export const SelfReport = props => {
 
 
     return(
-        <div>
+        <div className={"selfReport"}>
             <AffectPair emotion={"angry"} image={angry} reportEmotion={props.reportEmotion}/>
             <AffectPair emotion={"bored"} image={bored} reportEmotion={props.reportEmotion}/>
             <AffectPair emotion={"confused"} image={confused} reportEmotion={props.reportEmotion}/>
             <AffectPair emotion={"surprised"} image={surprised} reportEmotion={props.reportEmotion}/>
-            <button onClick={props.cancelAction}>
-                <img src={close} alt={"Close"}/>
+            <button className={"closeButton"} onClick={props.cancelAction}>
+                <img className={"closeButtonImage"} src={close} alt={"Close"}/>
             </button>
         </div>
     )
