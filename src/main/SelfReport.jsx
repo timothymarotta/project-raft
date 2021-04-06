@@ -18,7 +18,7 @@ export const SelfReport = props => {
 
     return(
         <div className={"selfReport"}>
-            <AffectPair emotion={"angry"} image={angry} reportEmotion={props.reportEmotion}/>
+            <AffectPair data-testid={"angry"} emotion={"angry"} image={angry} reportEmotion={props.reportEmotion}/>
             <AffectPair emotion={"bored"} image={bored} reportEmotion={props.reportEmotion}/>
             <AffectPair emotion={"confused"} image={confused} reportEmotion={props.reportEmotion}/>
             <AffectPair emotion={"surprised"} image={surprised} reportEmotion={props.reportEmotion}/>
