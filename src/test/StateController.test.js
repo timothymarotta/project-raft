@@ -5,23 +5,23 @@ import { StateController } from '../main/StateController';
 describe('State Controller', () => {
     test('render individual states', () => {
         //test neutral state
-        render(<StateController state={"neutral"}/>);
+        render(<StateController initState={"neutral"}/>);
         screen.debug();
         expect(screen.getByRole("Neutral"));
 
         //test self report state
-        render(<StateController state={"selfReport"}/>);
+        render(<StateController initState={"selfReport"}/>);
         screen.debug();
         expect(screen.getByRole("SelfReport"));
 
         //test confirmation state
-        render(<StateController state={"confirmation"}/>);
+        render(<StateController initState={"confirmation"}/>);
         screen.debug();
         expect(screen.getByRole("Confirmation"));
     })
 
     test('integration test', () => {
-        render(<StateController state={"neutral"}/>);
+        render(<StateController initState={"neutral"}/>);
         screen.debug();
         expect(screen.getByRole("Neutral"));
 

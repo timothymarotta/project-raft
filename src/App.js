@@ -1,12 +1,10 @@
 
 import './App.css';
-import { SelfReportDemo } from './test/SelfReport.demo';
-// import { Confirmation } from './main/Confirmation';
+import { StateController } from './main/StateController';
 
 function App() {
   return (
-    <SelfReportDemo></SelfReportDemo>
-    // <Confirmation></Confirmation>
+    <StateController state={"Neutral"}/>
   );
 }
 
