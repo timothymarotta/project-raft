@@ -5,7 +5,7 @@ import { StateController } from '../main/StateController';
 describe('State Controller', () => {
     test('render individual states', () => {
         //test neutral state
-        render(<StateController initState={"neutral"}/>);
+        render(<StateController initState={"Neutral"}/>);
         screen.debug();
         expect(screen.getByRole("Neutral"));
 
@@ -21,7 +21,7 @@ describe('State Controller', () => {
     })
 
     test('integration test', () => {
-        render(<StateController initState={"neutral"}/>);
+        render(<StateController initState={"Neutral"}/>);
         screen.debug();
         expect(screen.getByRole("Neutral"));
 

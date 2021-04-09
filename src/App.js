@@ -4,7 +4,7 @@ import { StateController } from './main/StateController';
 
 function App() {
   return (
-    <StateController state={"Neutral"}/>
+    <StateController initState={"Neutral"}/>
   );
 }
 
