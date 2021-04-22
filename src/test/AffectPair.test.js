@@ -8,7 +8,7 @@ describe('Affect Pair', () => {
     test('test button', () => {
         const mockTriggerConfirmation = jest.fn();
 
-        render(<AffectPair emotion={"Stressed"} image={testImage} triggerConfirmation={mockTriggerConfirmation}/>);
+        render(<AffectPair emotion={"Stressed"} image={testImage} reportEmotion={mockTriggerConfirmation}/>);
         screen.debug();
         expect(screen.getByRole('button')).toBeEnabled();
 
@@ -22,7 +22,7 @@ describe('Affect Pair', () => {
     test('test image', () => {
         const mockTriggerConfirmation = jest.fn();
 
-        render(<AffectPair emotion={"Stressed"} image={testImage} triggerConfirmation={mockTriggerConfirmation}/>);
+        render(<AffectPair emotion={"Stressed"} image={testImage} reportEmotion={mockTriggerConfirmation}/>);
         screen.debug();
 
         expect(screen.getAllByRole('img').length).toBe(1);

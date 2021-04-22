@@ -21,11 +21,11 @@ export const StateController = props => {
     }
 
     if (activeState === "Neutral"){
-        return(<Neutral triggerSelfReport={triggerSelfReport}/>);
+        return(<Neutral data-testid={"state-Neutral"} triggerSelfReport={triggerSelfReport}/>);
     } else if (activeState === "SelfReport"){
-        return(<SelfReport reportEmotion={reportEmotion} cancelAction={triggerNeutral}/>);
+        return(<SelfReport data-testid={"state-SelfReport"} reportEmotion={reportEmotion} cancelAction={triggerNeutral}/>);
     } else if (activeState === "Confirmation"){
-        return(<Confirmation/>);
+        return(<Confirmation data-testid={"state-Confirmation"}/>);
     } else {
         throw new Error("state not recognized");
     }

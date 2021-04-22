@@ -22,7 +22,7 @@ export const SelfReport = props => {
             <AffectPair emotion={"bored"} image={bored} reportEmotion={props.reportEmotion}/>
             <AffectPair emotion={"confused"} image={confused} reportEmotion={props.reportEmotion}/>
             <AffectPair emotion={"surprised"} image={surprised} reportEmotion={props.reportEmotion}/>
-            <button className={"closeButton"} onClick={props.cancelAction}>
+            <button data-testid={"cancelButton"} className={"closeButton"} onClick={props.cancelAction}>
                 <img className={"closeButtonImage"} src={close} alt={"Close"}/>
             </button>
         </div>
