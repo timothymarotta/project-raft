@@ -1,10 +1,15 @@
 import '../App.css'
+import {Container, Button, Col, Row} from 'react-bootstrap';
 
 export const Confirmation = props => {
 
     return(
-        <div className="Confirmation">
-            <p>Thanks for your feedback</p>
-        </div>
+        <Container>
+            <Row>
+                <Col lg={{span: 3, offset:9}}>
+                    <p>Thanks for your feedback!</p>
+                </Col>
+            </Row>
+        </Container>
     );
 };

@@ -1,69 +1,14 @@
-.Confirmation {
-  background-color: #E9EAEC;
-  position: fixed;
-  bottom: 5%;
-  right: 3%;
-  padding-left: 15px;
-  padding-right: 15px;
-  border-radius: 15px;
-  text-align: center;
-}
-
-.neutralButton {
+/* REACT BOOTSTRAP MODIFICATIONS */
+.btn-dark {
   width: 70px;
   height: 70px;
-  background-color: #2F3237;
-  border-radius: 50%;
-  border-color: transparent;
-  bottom: 5%;
-  right: 3%;
-  position: fixed;
-  transition: 0.2s;
+  border-radius: 140px;
 }
 
-.neutralButton:hover {
-  background-color: #1C1E21;
-  transition: 0.2s;
-}
-.neutralButton:active{
-  background-color: #090A0B;
-  transition: 0.2s;
-}
-.neutralButton:focus {
-  outline: none;
-}
-
-.affectText {
-  background-color: #E9EAEC;
-  /* position: fixed; */
-  padding-left: 15px;
-  padding-right: 15px;
-  border-radius: 15px;
-  /* text-align: center; */
-  margin-right: 100px;
-}
-
-.affectButton {
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  padding-top: 5px;
-  border-color: transparent;
-  background-color: #2F3237;
-  transition: 0.2s;
-  align-self: flex-end;
-}
-
-.affectButton:focus{
-  outline: none;
-}
-.affectButton:hover {
-  background-color: #1C1E21;
-  transition: 0.2s;
-}
-.affectButton:active{
-  background-color: #090A0B;
-  transition: 0.2s;
+/* CUSTOM CSS */
+.closeButton{
+  width: 50px;
+  height: 50px;
 }
 
 .affectButtonImage {
@@ -71,34 +16,7 @@
   height: 50px;
 }
 
-.affectContainer {
-  display: flex;
-  flex-direction: row-reverse;
-  padding-bottom: 1%;
-  padding-right: 3%;
-}
-
-.closeButton {
-  width: 70px;
-  height: 70px;
-  background-color: #2F3237;
-  border-radius: 50%;
-  border-color: transparent;
-  bottom: 5%;
-  right: 3.75%;
-  position: fixed;
-  transition: 0.2s;
-}
-
 .closeButtonImage {
   width: 20px;
   height: 20px;
-}
-
-.selfReport {
-  display: flex;
-  flex-direction: column;
-  position: fixed;
-  bottom: 15%;
-  right: 3%;
 }

@@ -1,5 +1,7 @@
 import feedback from "../assets/neutral-icon.png";
-import '../App.css';
+// import '../App.css';
+
+import {Container, Button, Col, Row} from 'react-bootstrap';
 
 export const Neutral = props => {
 
@@ -8,10 +10,14 @@ export const Neutral = props => {
     }
 
     return(
-        <div>
-            <button className={"neutralButton"} onClick={buttonClicked}>
-                <img src={feedback} alt={"Report Your Emotion"}></img>
-            </button>
-        </div>
+        <Container>
+            <Row noGutters>
+                <Col lg={{ span: 1, offset: 11}}>
+                    <Button variant="dark" onClick={buttonClicked}>
+                        <img src={feedback} alt={"Report Your Emotion"}></img>
+                    </Button>
+                </Col>
+            </Row>
+        </Container>
     );
 }
