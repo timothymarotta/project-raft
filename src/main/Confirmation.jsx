@@ -1,5 +1,5 @@
 import '../App.css'
-import {Container, Button, Col, Row} from 'react-bootstrap';
+import {Container, Col, Row} from 'react-bootstrap';
 
 export const Confirmation = props => {
 

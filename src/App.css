@@ -11,6 +11,10 @@
   height: 50px;
 }
 
+.affectButton {
+  padding-left:9px;
+}
+
 .affectButtonImage {
   width: 50px;
   height: 50px;

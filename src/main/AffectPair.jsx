@@ -14,7 +14,7 @@ export const AffectPair = props => {
                     <p className={"affectText"}>I'm feeling {props.emotion}</p>
                 </Col>
                 <Col lg={1}>
-                    <Button variant="dark" onClick={buttonClicked}>
+                    <Button className={"affectButton"} variant="dark" onClick={buttonClicked}>
                         <img className={"affectButtonImage"} src={props.image} alt={props.emotion}/>
                     </Button>
                 </Col>
